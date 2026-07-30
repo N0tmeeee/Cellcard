@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cellcard - Home</title>
+    <!-- Tailwind CSS CDN -->
+    <link rel="stylesheet" href="./src/output.css">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              brand: "#f97316", // Main Cellcard Orange
+              "brand-soft": "rgba(255, 170, 50, 0.5)",
+            },
+          },
+        },
+      };
+    </script>
+    <!-- FontAwesome Font -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <!-- AOS Animation CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  </head>
+  <body class="bg-slate-50 font-sans text-slate-900 antialiased selection:bg-orange-500 selection:text-white">
+
+    <!-- HEADER / NAVIGATION -->
+    <header class="fixed top-4 left-0 right-0 z-50 px-4">
+      <nav class="mx-auto max-w-6xl rounded-full bg-white/90 shadow-lg backdrop-blur-md transition-all">
+        <div class="flex items-center justify-between px-6 py-2">
+          <!-- Logo -->
+          <a href="https://www.cellcard.com.kh/en" class="flex-shrink-0">
+            <img src="./photo/cellcard-latest.png" alt="Cellcard Logo" class="h-10 w-auto transition-transform duration-300 hover:scale-105" />
+          </a>
+
+          <!-- Desktop Navigation -->
+          <div class="hidden items-center gap-1 lg:flex">
+            <a href="https://www.cellcard.com.kh/en/mobile" class="rounded-full px-4 py-2 font-bold text-slate-800 transition-colors hover:bg-orange-500 hover:text-white">5G</a>
+            <a href="https://www.cellcard.com.kh/en/mobile" class="rounded-full px-4 py-2 font-bold text-slate-800 transition-colors hover:bg-orange-500 hover:text-white">Mobile</a>
+            <a href="https://www.cellcard.com.kh/en/ao-wifi" class="rounded-full px-4 py-2 font-bold text-slate-800 transition-colors hover:bg-orange-500 hover:text-white">Home Wifi</a>
+            <a href="https://www.cellcard.com.kh/en/lifestyle" class="rounded-full px-4 py-2 font-bold text-slate-800 transition-colors hover:bg-orange-500 hover:text-white">Digital Lifestyle</a>
+            <a href="https://www.cellcard.com.kh/en/devices" class="rounded-full px-4 py-2 font-bold text-slate-800 transition-colors hover:bg-orange-500 hover:text-white">Cool Devices</a>
+          </div>
+
+          <!-- Get Sim CTA Button -->
+          <div class="flex items-center">
+            <a href="#" class="rounded-full bg-orange-500 px-6 py-2.5 text-sm font-bold text-white shadow-md transition-transform duration-300 hover:scale-105 hover:bg-orange-600">
+              Get Sim
+            </a>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="overflow-hidden">
+      <!-- HERO CAROUSEL -->
+      <section class="relative w-full overflow-hidden">
+        <div id="slidesTrack" class="flex w-full transition-transform duration-500 ease-in-out">
+          <img src="./photo/top1.avif" alt="Slide 1" class="w-full flex-shrink-0 object-cover min-h-[300px] md:min-h-[500px]" />
+          <img src="./photo/Top2.avif" alt="Slide 2" class="w-full flex-shrink-0 object-cover min-h-[300px] md:min-h-[500px]" />
+          <img src="./photo/Top3.avif" alt="Slide 3" class="w-full flex-shrink-0 object-cover min-h-[300px] md:min-h-[500px]" />
+          <img src="./photo/Top4.avif" alt="Slide 4" class="w-full flex-shrink-0 object-cover min-h-[300px] md:min-h-[500px]" />
+        </div>
+
+        <!-- Floating Pagination -->
+        <div id="pagination" class="absolute bottom-6 left-1/2 z-10 flex -translate-x-1/2 items-center gap-2 rounded-full bg-black/40 px-4 py-2 backdrop-blur-md">
+          <!-- Dots dynamically created via script -->
+        </div>
+      </section>
+
+      <!-- FEATURE BAR -->
+      <section id="feature" class="bg-slate-100 py-10">
+        <div class="mx-auto max-w-6xl px-4">
+          <div class="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4">
+            <div data-aos="fade-up" class="flex items-center justify-center rounded-2xl bg-white p-6 shadow-sm transition-transform hover:-translate-y-1">
+              <p class="text-lg font-bold text-slate-800"><i class="fa-solid fa-sim-card mr-3 text-orange-500"></i>Get Sim</p>
+            </div>
+            <div data-aos="fade-up" class="flex items-center justify-center rounded-2xl bg-white p-6 shadow-sm transition-transform hover:-translate-y-1">
+              <p class="text-lg font-bold text-slate-800"><i class="fa-solid fa-sack-dollar mr-3 text-orange-500"></i>Top up</p>
+            </div>
+            <div data-aos="fade-up" class="flex items-center justify-center rounded-2xl bg-white p-6 shadow-sm transition-transform hover:-translate-y-1">
+              <p class="text-lg font-bold text-slate-800"><i class="fa-solid fa-percent mr-3 text-orange-500"></i>Promotion</p>
+            </div>
+            <div data-aos="fade-up" class="flex items-center justify-center rounded-2xl bg-white p-6 shadow-sm transition-transform hover:-translate-y-1">
+              <p class="text-lg font-bold text-slate-800"><i class="fa-solid fa-location-dot mr-3 text-orange-500"></i>Find Store</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- MAIN PLAN SECTION -->
+      <section id="plan" class="bg-orange-100 py-12">
+        <div id="plans-container" class="mx-auto max-w-6xl px-4">
+          <!-- Section Header -->
+          <div class="mb-6 flex items-center justify-between">
+            <h2 class="text-3xl font-extrabold text-slate-900">Main Plan</h2>
+            <div class="flex gap-2">
+              <button class="flex h-10 w-10 items-center justify-center rounded-full bg-white text-slate-600 shadow transition hover:bg-slate-50" aria-label="Previous">
+                <i class="fa-solid fa-angle-left"></i>
+              </button>
+              <button class="flex h-10 w-10 items-center justify-center rounded-full bg-white text-slate-600 shadow transition hover:bg-slate-50" aria-label="Next">
+                <i class="fa-solid fa-angle-right"></i>
+              </button>
+            </div>
+          </div>
+
+          <!-- Horizontal Tabs Bar -->
+          <div class="mb-6 flex gap-2 overflow-x-auto rounded-full bg-white p-2 shadow-inner no-scrollbar">
+            <button data-aos="fade-up" data-aos-once="true" class="whitespace-nowrap rounded-full px-5 py-2 text-sm font-bold text-orange-500 hover:bg-orange-500 hover:text-white transition">Cellcard AO MOBILE 5G</button>
+            <button data-aos="fade-up" data-aos-once="true" class="whitespace-nowrap rounded-full px-5 py-2 text-sm font-bold text-orange-500 hover:bg-orange-500 hover:text-white transition">Cellcard AO MOBILE</button>
+            <button data-aos="fade-up" data-aos-once="true" class="whitespace-nowrap rounded-full px-5 py-2 text-sm font-bold text-orange-500 hover:bg-orange-500 hover:text-white transition">Cellcard AO AI</button>
+            <button data-aos="fade-up" data-aos-once="true" class="whitespace-nowrap rounded-full px-5 py-2 text-sm font-bold text-orange-500 hover:bg-orange-500 hover:text-white transition">Cellcard GAMER 5G</button>
+            <button data-aos="fade-up" data-aos-once="true" class="whitespace-nowrap rounded-full px-5 py-2 text-sm font-bold text-orange-500 hover:bg-orange-500 hover:text-white transition">Time to Rise</button>
+            <button data-aos="fade-up" data-aos-once="true" class="whitespace-nowrap rounded-full px-5 py-2 text-sm font-bold text-orange-500 hover:bg-orange-500 hover:text-white transition">Traveller SIM</button>
+          </div>
+
+          <a href="#" class="mb-6 inline-flex items-center text-xl font-bold text-blue-900 hover:underline">
+            Learn More <i class="fa-solid fa-arrow-right-long ml-2"></i>
+          </a>
+
+          <!-- Cards Grid -->
+          <div class="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
+            <!-- Card 1 -->
+            <div data-aos="fade-up" class="flex flex-col justify-between rounded-2xl bg-white p-6 shadow-md transition-all hover:shadow-lg">
+              <div>
+                <h3 class="text-center text-xl font-bold text-slate-900">Cellcard AO MOBILE 5G $1.5</h3>
+                <div class="my-2 text-center">
+                  <span class="rounded-full bg-orange-50 px-3 py-1 text-xs font-semibold text-orange-500">Data 4G/5G</span>
+                </div>
+                <div class="my-4 flex items-center justify-around border-y border-slate-100 py-3">
+                  <div class="text-center"><span class="text-3xl font-black text-slate-900">20GB</span></div>
+                  <div class="h-8 w-px bg-slate-200"></div>
+                  <div class="text-center"><span class="text-3xl font-black text-slate-900">$1.50</span></div>
+                </div>
+                <ul class="mb-6 space-y-3 text-xs text-slate-700">
+                  <li class="flex items-start gap-2"><i class="fa-solid fa-phone mt-0.5 text-orange-500"></i><span><strong>On-net Calls:</strong> 100 Mins</span></li>
+                  <li class="flex items-start gap-2"><i class="fa-solid fa-comment-dots mt-0.5 text-orange-500"></i><span><strong>On-net SMS:</strong> 100 SMS</span></li>
+                  <li class="flex items-start gap-2"><i class="fa-solid fa-clock mt-0.5 text-orange-500"></i><span><strong>Validity</strong> 7 Days</span></li>
+                  <li class="flex items-start gap-2"><i class="fa-solid fa-plus mt-0.5 text-orange-500"></i><span>Remaining calls, SMS, and data won't be wiped out and will roll over to your next plan</span></li>
+                </ul>
+              </div>
+              <div class="grid grid-cols-2 gap-2">
+                <button class="flex items-center justify-center gap-1 rounded-full border-2 border-orange-500 py-2 text-xs font-bold text-orange-500 transition hover:bg-orange-500 hover:text-white">
+                  <i class="fa-solid fa-phone"></i> *1618*150#
+                </button>
+                <button class="flex items-center justify-center gap-1 rounded-full bg-orange-500 py-2 text-xs font-bold text-white transition hover:bg-orange-600">
+                  <i class="fa-solid fa-cart-shopping"></i> cellcard app
+                </button>
+              </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div data-aos="fade-up" class="flex flex-col justify-between rounded-2xl bg-white p-6 shadow-md transition-all hover:shadow-lg">
+              <div>
+                <h3 class="text-center text-xl font-bold text-slate-900">Cellcard AO MOBILE 5G $2</h3>
+                <div class="my-2 text-center">
+                  <span class="rounded-full bg-orange-50 px-3 py-1 text-xs font-semibold text-orange-500">Data 4G/5G</span>
+                </div>
+                <div class="my-4 flex items-center justify-around border-y border-slate-100 py-3">
+                  <div class="text-center"><span class="text-3xl font-black text-slate-900">30GB</span></div>
+                  <div class="h-8 w-px bg-slate-200"></div>
+                  <div class="text-center"><span class="text-3xl font-black text-slate-900">$2.00</span></div>
+                </div>
+                <ul class="mb-6 space-y-3 text-xs text-slate-700">
+                  <li class="flex items-start gap-2"><i class="fa-solid fa-phone mt-0.5 text-orange-500"></i><span><strong>On-net Calls:</strong> 100 Mins</span></li>
+                  <li class="flex items-start gap-2"><i class="fa-solid fa-comment-dots mt-0.5 text-orange-500"></i><span><strong>On-net SMS:</strong> 100 SMS</span></li>
+                  <li class="flex items-start gap-2"><i class="fa-solid fa-clock mt-0.5 text-orange-500"></i><span><strong>Validity</strong> 7 Days</span></li>
+                  <li class="flex items-start gap-2"><i class="fa-solid fa-plus mt-0.5 text-orange-500"></i><span>Remaining calls, SMS, and data won't be wiped out and will roll over to your next plan</span></li>
+                </ul>
+              </div>
+              <div class="grid grid-cols-2 gap-2">
+                <button class="flex items-center justify-center gap-1 rounded-full border-2 border-orange-500 py-2 text-xs font-bold text-orange-500 transition hover:bg-orange-500 hover:text-white">
+                  <i class="fa-solid fa-phone"></i> *1618*200#
+                </button>
+                <button class="flex items-center justify-center gap-1 rounded-full bg-orange-500 py-2 text-xs font-bold text-white transition hover:bg-orange-600">
+                  <i class="fa-solid fa-cart-shopping"></i> cellcard app
+                </button>
+              </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div data-aos="fade-up" class="flex flex-col justify-between rounded-2xl bg-white p-6 shadow-md transition-all hover:shadow-lg">
+              <div>
+                <h3 class="text-center text-xl font-bold text-slate-900">Cellcard AO MOBILE 5G $6</h3>
+                <div class="my-2 text-center">
+                  <span class="rounded-full bg-orange-50 px-3 py-1 text-xs font-semibold text-orange-500">Data 4G/5G</span>
+                </div>
+                <div class="my-4 flex items-center justify-around border-y border-slate-100 py-3">
+                  <div class="text-center"><span class="text-3xl font-black text-slate-900">90GB</span></div>
+                  <div class="h-8 w-px bg-slate-200"></div>
+                  <div class="text-center"><span class="text-3xl font-black text-slate-900">$6.00</span></div>
+                </div>
+                <ul class="mb-6 space-y-3 text-xs text-slate-700">
+                  <li class="flex items-start gap-2"><i class="fa-solid fa-phone mt-0.5 text-orange-500"></i><span><strong>On-net Calls:</strong> 300 Mins</span></li>
+                  <li class="flex items-start gap-2"><i class="fa-solid fa-comment-dots mt-0.5 text-orange-500"></i><span><strong>On-net SMS:</strong> 300 SMS</span></li>
+                  <li class="flex items-start gap-2"><i class="fa-solid fa-clock mt-0.5 text-orange-500"></i><span><strong>Validity</strong> 30 Days</span></li>
+                  <li class="flex items-start gap-2"><i class="fa-solid fa-plus mt-0.5 text-orange-500"></i><span>Remaining calls, SMS, and data won't be wiped out and will roll over to your next plan</span></li>
+                </ul>
+              </div>
+              <div class="grid grid-cols-2 gap-2">
+                <button class="flex items-center justify-center gap-1 rounded-full border-2 border-orange-500 py-2 text-xs font-bold text-orange-500 transition hover:bg-orange-500 hover:text-white">
+                  <i class="fa-solid fa-phone"></i> *1618*600#
+                </button>
+                <button class="flex items-center justify-center gap-1 rounded-full bg-orange-500 py-2 text-xs font-bold text-white transition hover:bg-orange-600">
+                  <i class="fa-solid fa-cart-shopping"></i> cellcard app
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- PLANS & ADD-ON SECTION -->
+      <section id="pack" class="py-12 bg-white">
+        <div class="mx-auto max-w-6xl px-4">
+          <h3 class="mb-6 text-3xl font-bold text-slate-900">Plans & Add-On</h3>
+          <div class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+            <div data-aos="fade-up" class="group overflow-hidden rounded-3xl bg-slate-100 shadow">
+              <img src="./photo/dataplus-banner.png" alt="Data Plus" class="w-full object-cover transition-transform duration-500 group-hover:scale-105" />
+              <p class="p-6 text-xl font-bold text-slate-800">Data +</p>
+            </div>
+            <div data-aos="fade-up" class="group overflow-hidden rounded-3xl bg-slate-100 shadow">
+              <img src="./photo/data-hero.png" alt="Data Rescue" class="w-full object-cover transition-transform duration-500 group-hover:scale-105" />
+              <p class="p-6 text-xl font-bold text-slate-800">Data Rescue Add-On</p>
+            </div>
+            <div data-aos="fade-up" class="group overflow-hidden rounded-3xl bg-slate-100 shadow">
+              <img src="./photo/learn-on.png" alt="Learn Add-On" class="w-full object-cover transition-transform duration-500 group-hover:scale-105" />
+              <p class="p-6 text-xl font-bold text-slate-800">Learn Add-On</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SIM ONLY SECTION -->
+      <section id="sim" class="bg-orange-100 py-12">
+        <div class="mx-auto max-w-6xl px-4">
+          <h3 class="mb-6 text-3xl font-bold text-slate-900">Sim Only</h3>
+          <div class="grid grid-cols-1 gap-6 md:grid-cols-2">
+            <div data-aos="fade-up" class="group overflow-hidden rounded-3xl bg-slate-100 shadow">
+              <img src="./photo/esim.avif" alt="eSIM" class="h-96 w-full object-cover transition-transform duration-500 group-hover:scale-105" />
+              <p class="p-6 text-xl font-bold text-slate-800">eSIM</p>
+            </div>
+            <div data-aos="fade-up" class="group overflow-hidden rounded-3xl bg-slate-100 shadow">
+              <img src="./photo/yuk9.avif" alt="SimYuk9" class="h-96 w-full object-cover transition-transform duration-500 group-hover:scale-105" />
+              <p class="p-6 text-xl font-bold text-slate-800">SimYuk9</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- INTERNATIONAL SERVICES SECTION -->
+      <section id="service" class="py-12 bg-white">
+        <div class="mx-auto max-w-6xl px-4">
+          <h3 class="mb-6 text-3xl font-bold text-slate-900">International Services</h3>
+          <div data-aos="fade-up" class="grid grid-cols-1 overflow-hidden rounded-2xl bg-slate-100 md:grid-cols-2 shadow-sm">
+            <img src="./photo/service.avif" alt="Roaming" class="h-full w-full object-cover transition-transform duration-500 hover:scale-105" />
+            <div class="flex flex-col justify-center p-8">
+              <h2 class="text-3xl font-bold text-slate-900 mb-4">Cellcard AO Roaming Pack</h2>
+              <a href="#" class="inline-block self-start rounded-full bg-orange-500 px-6 py-2.5 font-bold text-white transition hover:bg-orange-600">
+                Learn More
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- DIGITAL LIFESTYLE & APP SECTION -->
+      <section class="bg-slate-200 py-12">
+        <div class="mx-auto max-w-6xl px-4 space-y-12">
+
+          <!-- Explore Digital Lifestyle Services -->
+          <div>
+            <h3 class="mb-6 text-3xl font-bold text-slate-900">Explore Digital Lifestyle Services</h3>
+            <div class="grid grid-cols-1 gap-6 md:grid-cols-2">
+              <div data-aos="fade-up" class="group overflow-hidden rounded-3xl bg-white shadow">
+                <img src="./photo/Gaming.avif" alt="eSIM" class="h-80 w-full object-cover transition-transform duration-500 group-hover:scale-105" />
+                <p class="p-6 text-xl font-bold text-slate-800">eSIM</p>
+              </div>
+              <div data-aos="fade-up" class="group overflow-hidden rounded-3xl bg-white shadow">
+                <img src="./photo/Others.avif" alt="SimYuk9" class="h-80 w-full object-cover transition-transform duration-500 group-hover:scale-105" />
+                <p class="p-6 text-xl font-bold text-slate-800">SimYuk9</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Banner -->
+          <div data-aos="fade-up" class="overflow-hidden rounded-2xl bg-white shadow">
+            <div class="p-6">
+              <p class="text-2xl font-bold text-slate-900">Cellcard AO Wifi</p>
+            </div>
+            <img src="./photo/Cellcard.png" alt="Cellcard Wifi" class="w-full object-cover transition-transform duration-500 hover:scale-105" />
+          </div>
+
+          <!-- App Showcase Section -->
+          <div>
+            <h2 class="mb-6 text-3xl font-bold text-slate-900">Do More with cellcard app</h2>
+            <div class="grid grid-cols-1 gap-6 md:grid-cols-2">
+              <!-- Full Width Row 1 -->
+              <div data-aos="fade-up" class="col-span-1 md:col-span-2 flex flex-col md:flex-row items-center justify-between rounded-3xl bg-white p-8 shadow">
+                <div class="md:w-1/2 space-y-4">
+                  <h3 class="text-3xl font-bold text-orange-500">cellcard app</h3>
+                  <p class="text-slate-600 leading-relaxed">
+                    Take full control of your cellcard account with just a few taps! cellcard App lets you check balances, manage subscriptions, top up, and access exclusive offers anytime, anywhere.
+                  </p>
+                  <a href="#" class="inline-block rounded-full bg-orange-500 px-6 py-2.5 font-semibold text-white shadow hover:bg-orange-600 transition">
+                    Learn More
+                  </a>
+                  <div class="pt-4">
+                    <p class="text-sm font-bold text-slate-800 mb-2">Download now</p>
+                    <div class="flex items-center gap-4">
+                      <img src="./photo/image.png" alt="QR Code" class="h-28 w-28 rounded-lg shadow-sm" />
+                      <div class="flex flex-col gap-2">
+                        <a href="#"><img src="./photo/Screenshot 2026-07-29 234952.png" alt="Google Play" class="h-9 w-auto" /></a>
+                        <a href="#"><img src="./photo/Screenshot 2026-07-29 235144.png" alt="App Store" class="h-9 w-auto" /></a>
+                        <a href="#"><img src="./photo/Screenshot 2026-07-29 235216.png" alt="AppGallery" class="h-9 w-auto" /></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div data-aos="fade-up" class="mt-6 md:mt-0 md:w-1/2 flex justify-end">
+                  <img src="./photo/cc-app-en.avif" alt="App Display" class="max-w-full rounded-2xl" />
+                </div>
+              </div>
+
+              <!-- Row 2 Card 1 -->
+              <div data-aos="fade-up" class="flex flex-col justify-between rounded-3xl bg-white p-8 shadow">
+                <div class="space-y-3">
+                  <h3 class="text-2xl font-bold text-orange-500">Manage Subscriptions</h3>
+                  <p class="text-slate-600 leading-relaxed">Easily manage all subscriptions in one place. View active plans, check remaining balances, and renew or upgrade your plan.</p>
+                </div>
+                <div class="mt-6 flex justify-center">
+                  <img src="./photo/usage-plan-en.avif" alt="Subscriptions" class="max-w-[85%] rounded-xl" />
+                </div>
+              </div>
+
+              <!-- Row 2 Card 2 -->
+              <div data-aos="fade-up" class="flex flex-col justify-between rounded-3xl bg-white p-8 shadow">
+                <div class="space-y-3">
+                  <h3 class="text-2xl font-bold text-orange-500">Seamless Top-up with Bank</h3>
+                  <p class="text-slate-600 leading-relaxed">Enjoy a hassle-free top-up experience by linking your bank accounts or cards without leaving the app.</p>
+                </div>
+                <div class="mt-6 flex justify-center">
+                  <img src="./photo/topup-card-en.avif" alt="Top Up" class="max-w-[85%] rounded-xl" />
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- SUPPORT SECTION -->
+      <section class="bg-orange-500 py-12 text-white">
+        <div class="mx-auto max-w-6xl px-4 grid grid-cols-1 gap-8 md:grid-cols-3 items-center">
+          <div class="space-y-4 md:col-span-2">
+            <h2 class="text-3xl font-extrabold">How can we help?</h2>
+            <p class="text-lg opacity-90">Chat with us now so we can assist you.</p>
+            <div class="flex flex-wrap gap-6 pt-2">
+              <a href="https://web.facebook.com/CellcardFanPage" class="flex items-center gap-3 rounded-full bg-white/10 px-5 py-2.5 backdrop-blur transition hover:bg-white/20">
+                <i class="fa-brands fa-facebook-messenger text-2xl"></i>
+                <span class="font-medium">Facebook Messenger</span>
+              </a>
+              <a href="https://t.me/cellcard_Bot" class="flex items-center gap-3 rounded-full bg-white/10 px-5 py-2.5 backdrop-blur transition hover:bg-white/20">
+                <i class="fa-brands fa-telegram text-2xl"></i>
+                <span class="font-medium">Telegram</span>
+              </a>
+            </div>
+          </div>
+          <div class="flex justify-center">
+            <img src="./photo/bg-support.avif" alt="Support" class="rounded-2xl max-w-full shadow-lg" />
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="bg-white py-10 text-slate-800">
+      <div class="mx-auto max-w-6xl px-4 space-y-8">
+        <div>
+          <img src="./photo/cellcard-latest.png" alt="Logo" class="h-10 w-auto" />
+        </div>
+
+        <div class="grid grid-cols-2 gap-8 border-y border-slate-200 py-8 md:grid-cols-4">
+          <div class="space-y-3">
+            <h3 class="font-bold text-slate-900">Quick Discover</h3>
+            <ul class="space-y-2 text-sm text-slate-600">
+              <li><a href="#" class="hover:text-orange-500">Plans</a></li>
+              <li><a href="#" class="hover:text-orange-500">Top Up</a></li>
+              <li><a href="#" class="hover:text-orange-500">Promotions</a></li>
+              <li><a href="#" class="hover:text-orange-500">Get eSIM</a></li>
+              <li><a href="#" class="hover:text-orange-500">Cellcard Home WiFi</a></li>
+              <li><a href="#" class="hover:text-orange-500">Cellcard App</a></li>
+            </ul>
+          </div>
+          <div class="space-y-3">
+            <h3 class="font-bold text-slate-900">Add-ons & Lifestyle</h3>
+            <ul class="space-y-2 text-sm text-slate-600">
+              <li><a href="#" class="hover:text-orange-500">Data+</a></li>
+              <li><a href="#" class="hover:text-orange-500">Learn Add-On</a></li>
+              <li><a href="#" class="hover:text-orange-500">Yuk9 Pack</a></li>
+              <li><a href="#" class="hover:text-orange-500">Cellcard AO MLBB Pack</a></li>
+              <li><a href="#" class="hover:text-orange-500">Data Rescue</a></li>
+            </ul>
+          </div>
+          <div class="space-y-3">
+            <h3 class="font-bold text-slate-900">Support</h3>
+            <ul class="space-y-2 text-sm text-slate-600">
+              <li><a href="#" class="hover:text-orange-500">FAQs</a></li>
+              <li><a href="#" class="hover:text-orange-500">Contact Us</a></li>
+              <li><a href="#" class="hover:text-orange-500">Find Store</a></li>
+            </ul>
+          </div>
+          <div class="space-y-3">
+            <h3 class="font-bold text-slate-900">Our Company</h3>
+            <ul class="space-y-2 text-sm text-slate-600">
+              <li><a href="#" class="hover:text-orange-500">Company</a></li>
+              <li><a href="#" class="hover:text-orange-500">Careers</a></li>
+              <li><a href="#" class="hover:text-orange-500">Media Center</a></li>
+              <li><a href="#" class="hover:text-orange-500">Investor Relations</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="flex flex-col items-center justify-between gap-4 text-xs text-slate-500 md:flex-row">
+          <p>All Rights Reserved © 2026 • Terms &amp; Conditions • Privacy Policy • Cookie Policy</p>
+          <div class="flex gap-3">
+            <a href="#" class="flex h-8 w-8 items-center justify-center rounded-full bg-orange-500 text-white transition hover:opacity-80"><i class="fa-brands fa-facebook-f text-sm"></i></a>
+            <a href="#" class="flex h-8 w-8 items-center justify-center rounded-full bg-orange-500 text-white transition hover:opacity-80"><i class="fa-brands fa-instagram text-sm"></i></a>
+            <a href="#" class="flex h-8 w-8 items-center justify-center rounded-full bg-orange-500 text-white transition hover:opacity-80"><i class="fa-brands fa-linkedin-in text-sm"></i></a>
+            <a href="#" class="flex h-8 w-8 items-center justify-center rounded-full bg-orange-500 text-white transition hover:opacity-80"><i class="fa-brands fa-telegram text-sm"></i></a>
+            <a href="#" class="flex h-8 w-8 items-center justify-center rounded-full bg-orange-500 text-white transition hover:opacity-80"><i class="fa-brands fa-youtube text-sm"></i></a>
+            <a href="#" class="flex h-8 w-8 items-center justify-center rounded-full bg-orange-500 text-white transition hover:opacity-80"><i class="fa-brands fa-tiktok text-sm"></i></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="./script/script.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
